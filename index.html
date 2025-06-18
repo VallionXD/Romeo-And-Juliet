@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/assets/Icon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/src/styles.css" rel="stylesheet">
+        <title>Romeo and Juliet</title>
+    </head>
+    <body class="antialiased bg-[#111] scroll-smooth w-screen-fix h-screen-fix transition-all duration-300">
+        <div class="relative h-screen-fix w-screen-fix">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="783px" height="823px" class="absolute inset-0 w-full h-full">
+                <defs>
+                    <radialGradient id="Fade" cx="50%" cy="50%" r="70%">
+                        <stop offset="0%" stop-color="#777" />
+                        <stop offset="100%" stop-color="rgba(119,119,119,0)" stop-opacity="0" />
+                      </radialGradient>
+
+                    <pattern id="Grid" patternUnits="userSpaceOnUse" width="27" height="27" x="1243.775" y="642.375">
+                        <line stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.675" x1="13.1625" y1="13.8375" x2="14.5125" y2="13.8375" />
+                        <line stroke="rgba(255, 255, 255, 0.2)" stroke-width="0.675" x1="13.8375" y1="13.1625" x2="13.8375" y2="14.5125" />
+                    </pattern>
+                </defs>
+                <g>
+                    <rect height="100%" width="100%" class="blocklyMainBackground" style="fill: url(&quot;#Grid&quot;);"></rect>
+                </g>
+            </svg>
+            <div class="relative flex h-screen-fix w-full items-center justify-center">
+            
+                <div class="relative rounded-md h-full w-[1920px]">
+                    <img
+                    src="/assets/Verona.webp"
+                    alt="Verona"
+                    class="w-[95%] max-w-[80%] scale-120 h-full block mx-auto brightness-80"
+                    style="
+                    mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
+                    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%);
+                    mask-repeat: no-repeat;
+                    -webkit-mask-repeat: no-repeat;
+                    mask-size: contain;
+                    -webkit-mask-size: contain;
+                    mask-position: center;
+                    -webkit-mask-position: center; 
+                    "
+                  />              
+                    <div class="absolute h-screen-fix inset-0 flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h1 class="text-8xl text-white leading-tight tracking-tight font-semibold text-shadow-lg/30 inline-block mb-4">Welcome to <span class="bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text font-bold text-transparent [text-shadow:rgba(0,162,242,0.32)_0px_0px_39px]">Verona</span></h1>
+                            <p class="text-3xl text-white/85 leading-tight tracking-tight font-medium text-shadow-lg/30 mb-8">Learn about the characters, theme, and more.</p>
+                            <div class="space-x-4 select-none">
+                                <a href="#characters" class="inline-block px-6 py-3 bg-black/60 hover:bg-black/70 active:bg-black/80 text-white hover:text-white/90 active:text-white/90 backdrop-invert-100 backdrop-blur-xs focus:outline-none focus:ring-3 focus:ring-black/40 font-medium rounded-full text-sm transition-all duration-300">
+                                    See The Characters
+                                </a>
+                                <a href="#theme" class="inline-block px-6 py-3 bg-black/60 hover:bg-black/70 active:bg-black/80 text-white hover:text-white/90 active:text-white/90 backdrop-invert-100 backdrop-blur-xs focus:outline-none focus:ring-3 focus:ring-black/40 font-medium rounded-full text-sm transition-all duration-300">
+                                    Explore the Themes
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="characters" class="relative min-h-screen bg-[#141414] flex flex-col items-center justify-center overflow-hidden">
+            <svg viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" class="absolute right-0 top-0 h-full w-auto" reserveAspectRatio="xMidYMid slice">
+                <path d="M960 486c-76.7 7.4-153.4 14.8-186-37-32.6-51.7-21-162.6-46.6-216.4-25.7-53.7-88.5-50.3-137-79.5C542 123.8 508 61.9 474 0h486Z" fill="#231b19"/>
+                <path d="M960 425.3c-67.1 6.4-134.2 12.9-162.7-32.4s-18.4-142.3-40.9-189.3c-22.4-47.1-77.4-44.1-119.8-69.7C594.3 108.3 564.5 54.2 534.8 0H960Z" fill="#412723"/>
+                <path d="M960 364.5c-57.5 5.5-115.1 11.1-139.5-27.7-24.4-38.9-15.7-122-35-162.3-19.2-40.3-66.3-37.8-102.7-59.7C646.5 92.9 621 46.4 595.5 0H960Z" fill="#60342e"/>
+                <path d="M960 303.8c-47.9 4.6-95.9 9.2-116.2-23.2-20.4-32.3-13.2-101.6-29.2-135.2S759.3 114 729 95.7c-30.2-18.3-51.5-57-72.7-95.7H960Z" fill="#814139"/>
+                <path d="M960 243c-38.4 3.7-76.7 7.4-93-18.5s-10.5-81.3-23.3-108.2c-12.8-26.8-44.3-25.1-68.5-39.8C751 61.9 734 31 717 0h243Z" fill="#a44e44"/>
+                <path d="M960 182.3c-28.8 2.7-57.5 5.5-69.7-13.9-12.3-19.4-7.9-61-17.5-81.2-9.7-20.1-33.2-18.8-51.4-29.8-18.1-11-30.9-34.2-43.6-57.4H960Z" fill="#c75b4f"/>
+                <path d="M960 121.5c-19.2 1.8-38.4 3.7-46.5-9.2-8.1-13-5.2-40.7-11.7-54.1-6.4-13.5-22.1-12.6-34.2-19.9S847 15.5 838.5 0H960Z" fill="#ec685b"/>
+                <path d="M960 60.8c-9.6.9-19.2 1.8-23.2-4.7-4.1-6.4-2.7-20.3-5.9-27s-11-6.3-17.1-10c-6-3.6-10.3-11.4-14.5-19.1H960Z" fill="#ff6f61"/>
+            </svg>
+
+            <svg viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" class="absolute left-0 top-0 h-full w-auto" reserveAspectRatio="xMidYMid slice">
+                <path d="M0 54c62.4 5.9 124.9 11.7 186 37 61.1 25.2 120.9 69.9 134.3 128.7s-19.6 131.8.3 187.5C340.5 463 413.2 501.5 486 540H0Z" fill="#231b19"/>
+                <path d="M0 114.8c54.6 5.1 109.3 10.2 162.7 32.3 53.5 22.1 105.9 61.2 117.6 112.6 11.7 51.5-17.2 115.3.2 164.1s81.1 82.5 144.8 116.2H0Z" fill="#412723"/>
+                <path d="M0 175.5c46.8 4.4 93.6 8.8 139.5 27.7 45.8 19 90.7 52.5 100.7 96.6 10.1 44.1-14.7 98.8.2 140.6s69.5 70.7 124.1 99.6H0Z" fill="#60342e"/>
+                <path d="M0 236.3c39 3.6 78 7.3 116.2 23.1s75.6 43.6 84 80.4-12.3 82.4.2 117.2c12.4 34.8 57.9 58.9 103.4 83H0Z" fill="#814139"/>
+                <path d="M0 297c31.2 2.9 62.4 5.9 93 18.5s60.5 34.9 67.2 64.3-9.8 65.9.1 93.8 46.3 47.1 82.7 66.4H0Z" fill="#a44e44"/>
+                <path d="M0 357.8c23.4 2.2 46.8 4.4 69.7 13.8 23 9.5 45.4 26.2 50.4 48.3 5 22-7.3 49.4.1 70.3 7.5 20.9 34.8 35.4 62.1 49.8H0Z" fill="#c75b4f"/>
+                <path d="M0 418.5c15.6 1.5 31.2 2.9 46.5 9.2 15.3 6.4 30.2 17.5 33.6 32.2 3.3 14.7-4.9 33 0 46.9 5 13.9 23.2 23.6 41.4 33.2H0Z" fill="#ec685b"/>
+                <path d="M0 479.3c7.8.7 15.6 1.4 23.2 4.6 7.7 3.1 15.2 8.7 16.8 16.1 1.7 7.3-2.4 16.4.1 23.4s11.6 11.8 20.7 16.6H0Z" fill="#ff6f61"/>
+            </svg>
+
+            <div class="relative w-screen-fix h-screen-fix flex flex-col items-center justify-center px-8 py-20">
+                <h1 class="text-6xl text-white font-semibold text-shadow-lg/30 inline-block mb-4">Learn about The Characters!</h1>
+                <p class="text-2xl text-white/70 font-medium text-shadow-lg/30 mb-8">Here you can find some useful information about the characters.</p>
+                <div class="w-[60%] h-[82%] flex flex-wrap gap-4 p-4 overflow-y-auto no-scrollbar select-none">
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Romeo.webp" alt="Romeo Montague" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Romeo Montague
+                            </h5>
+                            <p class="text-md text-white/90">
+                                The son of Lord Montague. Falls in love with Juliet and marries her in secret, which is the beginning of the end.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Juliet.webp" alt="Juliet Capulet" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Juliet Capulet
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Juliet is smart, bold, and done listening to her parents. She falls for Romeo and tries fakes her death to escape her situation, but it ends in the death of Romeo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Mercutio.webp" alt="Mercuito" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Mercutio
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Romeo’s close friend who jokes around and doesn’t take things seriously, until things get real. He dies, then things go downhill.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Tybalt.webp" alt="Tybalt Capulet" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Tybalt Capulet
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Juliet’s cousin who’s always ready to fight. He hates the Montagues and kills Mercutio, which gets him killed by Romeo. His temper makes things way worse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Friar.webp" alt="Friar Laurence" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Friar Laurence
+                            </h5>
+                            <p class="text-md text-white/90">
+                                A priest who tries to help Romeo and Juliet be together in secret. His plans sound smart at first, but everything falls apart.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Nurse.webp" alt="Nurse" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Nurse
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Juliet’s caretaker who’s like a second mom. She helps Juliet at first, but later backs off when things get serious.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/LordCapulet.webp" alt="Lord Capulet" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Lord Capulet
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Juliet’s father who wants full control over her future. Tries to force her to marry Paris without listening to what she wants. His pressure helps push her toward tragedy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/LadyCapulet.webp" alt="Lady Capulet" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Lady Capulet
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Juliet’s mom who mostly follows her husband’s lead. She supports the idea of Juliet marrying Paris and doesn’t really connect with her daughter.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/LordMontague.webp" alt="Lord Montague" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Lord Montague
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Romeo’s dad, caught in a long feud with the Capulets. He doesn’t have a big role until the end, when he realizes what all the hate cost them.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Paris.webp" alt="Paris" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Paris
+                            </h5>
+                            <p class="text-md text-white/90">
+                                A nobleman who wants to marry Juliet and thinks he’s doing the right thing. He doesn’t know about her and Romeo, and ends up dying at her tomb.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-84 h-72 bg-white/10 backdrop-blur-md rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                        <img class="w-full h-32 object-cover" src="/assets/Benvolio.webp" alt="Benvolio Montague" />
+                        <div class="p-4 flex flex-col justify-between flex-1">
+                            <h5 class="text-xl font-semibold text-white mb-2">
+                                Benvolio Montague
+                            </h5>
+                            <p class="text-md text-white/90">
+                                Romeo’s cousin who always tries to keep the peace. He means we<h3 class="text-lg font-semibold text-white/80">ll, but no one really listens to him. He disappears from the story once things get too serious.
+                            </p>
+                        </div>
+                    </div>
+                </div>                                   
+            </div>
+        </section>
+
+        <section id="theme" class="relative min-h-screen bg-[#141414] backgroun-image flex flex-col items-center justify-center overflow-hidden">
+            <svg width="100%" height="100%" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" class="absolute w-screen-fix h-screen-fix">
+                <defs>
+                    <pattern id="repeatingPattern" patternUnits="userSpaceOnUse" width="80" height="80">
+                        <g fill="#27272750" fill-opacity="0.4">
+                            <path fill-rule="evenodd" d="M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z"/>
+                        </g>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#repeatingPattern)" />
+            </svg>              
+            <div class="relative w-1/2 h-screen-fix flex flex-col items-center justify-center px-8 py-20">
+                <h1 class="text-6xl text-white font-semibold text-shadow-lg/30 inline-block mb-4">Themes</h1>
+                <p class="text-2xl text-white/70 font-medium text-shadow-lg/30 mb-8">Some themes that fit the story are presented below.</p> 
+                <ol class="relative border-s border-neutral-700">                  
+                    <li class="mb-10 ms-4">
+                        <div class="absolute w-3 h-3 bg-neutral-700 rounded-full mt-1.5 -start-1.5"></div>
+                        <span class="mb-1 text-sm font-normal leading-none text-white/50">
+                            Theme #1
+                        </span>
+                        <h3 class="text-lg font-semibold text-white/80">
+                            The Power of Love can be Amazing and Destructive
+                        </h3>
+                        <p class="mb-4 text-base font-normal text-neutral-500">
+                            The love between Romeo and Juliet is intense, but it blinds them from reality. The relationship between them gets stronger rapidly, which leads to many reckless choices, such as getting married after one day. The same love that brought them to marrige, also brought them to their end.
+                        </p>
+                    </li>
+                    <li class="ms-4">
+                        <div class="absolute w-3 h-3 bg-neutral-700 rounded-full mt-1.5 -start-1.5"></div>
+                        <span class="mb-1 text-sm font-normal leading-none text-neutral-400">
+                            Theme #2
+                        </span>
+                        <h3 class="text-lg font-semibold text-white/80">
+                            Hate Between Families Destroys Them
+                        </h3>
+                        <p class="text-base font-normal text-neutral-500">
+                            The Montague and Capulet rivalry ruins everything. Romeo and Juliet don't hate each other they love each other. Unfortunately, the rivalry between the families brings everything to chaos, resulting in Mercuito and Paris getting killed.
+                        </p>
+                    </li>
+                </ol>                                 
+            </div>
+        </section>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
